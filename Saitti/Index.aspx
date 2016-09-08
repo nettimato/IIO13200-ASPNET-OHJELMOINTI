@@ -12,6 +12,10 @@
         <div>
             <h1>IIO13200. NET Ohjelmointi</h1>
             <h2>1.kontaktikerta</h2>
+            <p>Oma hieno nettisivu!</p>
+            <h3>Perus HTML-kontrolleja</h3>
+            <a href="TestPage.html">Testisivu</a>
+            <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Hello.aspx">Link Button</asp:LinkButton>
             <p>
                 Esimerkki ASP.NET DataKontrollista
                 <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/ShowPhotos.aspx">Show Photos</asp:HyperLink>
