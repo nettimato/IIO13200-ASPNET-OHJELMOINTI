@@ -1,0 +1,27 @@
+﻿@{ 
+    var txtfilu = Server.MapPath("~/App_Data/Oppilaat.txt");
+    Array oppilaat = File.ReadAllLines(txtfilu);
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Valtteri's furst Razur paig</title>
+    </head>
+    <body>
+        <h2>Tänään on @DateTime.Today.ToShortDateString()</h2>
+        <h2>Oppilaamme:</h2>
+        <div>
+            <p>
+                @{ 
+                    int i = 1;
+                    foreach (string oppilas in oppilaat)
+                    {
+                        @i<text>: </text> @oppilas <br/>
+                        i++;
+                    }
+                }
+            </p>
+        </div>
+    </body>
+</html>
